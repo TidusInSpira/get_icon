@@ -1,0 +1,24 @@
+{
+  "name": "@tidus/get_icon",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava",
+    "coverage": "nyc --reporter=html --reporter=text ava"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "nyc": "^14.1.1"
+  },
+  "repository": "https://github.com/TidusInSpira/get_icon.git",
+  "author": "TidusInSpira <tidusinspira@outlook.com>"
+}
