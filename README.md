@@ -11,6 +11,13 @@ npm install @tidus/get_icon --save
 yarn add @tidus/get_icon
 ```
 
+## Usage
+```javascript
+const { get_icon } = require('@tidus/get_icon')
+let icon_url = await get_icon('https://github.com')
+console.log(icon_url)
+```
+
 ## Test
 
 ```shell
