@@ -25,7 +25,7 @@ test('link[rel="icon"] ', async t => {
 test('link[rel="shortcut icon"]', async t => {
   let url = 'https://zhihu.com';
   let icon = await get_icon(url);
-  t.is(icon, 'https://static.zhihu.com/static/favicon.ico');
+  t.is(icon, 'https://static.zhihu.com/heifetz/favicon.ico');
 });
 
 test('link[rel="shortcut icon"] start with /', async t => {
