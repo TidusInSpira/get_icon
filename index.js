@@ -1,5 +1,5 @@
 const cheerio = require('cheerio');
-const rp = require('request-promise');
+const fetch = require('node-fetch')
 const { URL } = require('url');
 
 function getCurrentDirUrl(url) {
@@ -10,7 +10,8 @@ function getCurrentDirUrl(url) {
 }
 
 async function get_icon(url) {
-  let htmlString = await rp(url);
+  let response = await fetch(url);
+  let htmlString = await response.text();
   let $ = cheerio.load(htmlString);
 
   let _url = new URL(url);

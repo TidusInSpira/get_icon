@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.5"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "ava": "^2.4.0",
